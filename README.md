@@ -2,6 +2,8 @@
 # CSE330
 Katherine Feng 520824 kather1ne-feng
 
+im making a forum to post and find out about pick up sports games with different sports and awesome stuff like that
+
 <br><br><br><br><br><br><br><br><br>
 Rubric
 
@@ -12,6 +14,7 @@ Rubric
 | 10       | learning turbo/hotwire for front end                                            |            
 | 10       | learning postgresql for database                                                |             
 | 5        | learning tailwindcss for styling                                                |
+| 35       |                                                                                 |
 -- functionality --
 | 10       | users can login, register, and logout                                           |             
 | 5        | users can post new pick up games/events                                         |             
@@ -22,8 +25,11 @@ Rubric
 | 5        | page does not need to reload to update the page                                 |
 | 5        | events are stored and managed by postgresql database                            |   
 | 10       | events can be associated with different sports and be filtered by these tags    |
+| 55       |                                                                                 |
 -- best practices --
 | 2.5      | files pass w3c html validator                                                   |             
-| 2.5      | best practicies w readable and well organized code                              | 
+| 2.5      | best practicies w readable and well organized code                              |
+| 5        |                                                                                 |
 -- rubric submission --
-| 5        | rubric submission                                                               |             
+| 5        | rubric submission                                                               |
+| 5        |                                                                                 |
