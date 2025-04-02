@@ -12,9 +12,8 @@ Rubric
 -- learning and implementing new frameworks --
 | 10       | learning ruby on rails for framework/backend                                    |             
 | 10       | learning turbo/hotwire for front end                                            |            
-| 10       | learning postgresql for database                                                |             
 | 5        | learning tailwindcss for styling                                                |
-| 35       |                                                                                 |
+| 25       |                                                                                 |
 -- functionality --
 | 10       | users can login, register, and logout                                           |             
 | 5        | users can post new pick up games/events                                         |             
@@ -22,10 +21,9 @@ Rubric
 | 5        | users can comment on game posts                                                 |             
 | 5        | users can modify/delete posts                                                   |             
 | 5        | users cannot manipulate events that they didn't create                          |             
-| 5        | page does not need to reload to update the page                                 |
 | 5        | events are stored and managed by postgresql database                            |   
 | 10       | events can be associated with different sports and be filtered by these tags    |
-| 55       |                                                                                 |
+| 50       |                                                                                 |
 -- best practices --
 | 2.5      | files pass w3c html validator                                                   |             
 | 2.5      | best practicies w readable and well organized code                              |
@@ -33,3 +31,4 @@ Rubric
 -- rubric submission --
 | 5        | rubric submission                                                               |
 | 5        |                                                                                 |
+# creative portion (15pts)
