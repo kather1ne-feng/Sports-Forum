@@ -34,8 +34,8 @@ Rubric
 | 5        | rubric submission                                                               |
 | 5        |                                                                                 |
 # creative portion (15pts)
-- emails someone when they rsvp to an event and when it changes
+- emails someone when they rsvp to an event and when the details change
 - you can leave an event too
 - notifies/alerts whenever the site is updated
 - web safety, only uses session variables for the user for any events or comments
-- sort by event time for upcoming events
+- you can reset your password thru a link that ruby sends u
