@@ -35,4 +35,4 @@ Rubric
 | 5        |                                                                                 |
 # creative portion (15pts)
 5: emails someone when they rsvp to an event and when it changes
-
+5: web safety, only uses session variables for the user for any events or comments
