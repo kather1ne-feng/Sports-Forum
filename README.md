@@ -34,6 +34,8 @@ Rubric
 | 5        | rubric submission                                                               |
 | 5        |                                                                                 |
 # creative portion (15pts)
-5: emails someone when they rsvp to an event and when it changes
-5: you can leave an event too
-5: web safety, only uses session variables for the user for any events or comments
+- emails someone when they rsvp to an event and when it changes
+- you can leave an event too
+- notifies/alerts whenever the site is updated
+- web safety, only uses session variables for the user for any events or comments
+- sort by event time for upcoming events
