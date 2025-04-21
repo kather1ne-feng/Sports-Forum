@@ -1,0 +1,75 @@
+<div class="max-w-4xl mx-auto px-4 py-6">
+  <%= link_to "← Back to Events", events_path, class: "text-blue-600 hover:underline text-sm mb-4 inline-block" %>
+
+  <% if @event.featured_image.attached? %>
+    <%= image_tag @event.featured_image, class: "w-full h-64 object-cover rounded mb-6" %>
+  <% end %>
+
+  <% cache @event do %>
+    <h1 class="text-3xl font-bold mb-2"><%= @event.name %></h1>
+    <p class="text-gray-600 mb-1">👤 Created by: <%= @event.user.username %></p>
+    <p class="text-gray-600 mb-1">🕒 <strong>Time:</strong> <%= @event.event_time.strftime("%A, %B %e at %l:%M %p") %></p>
+    <p class="text-gray-600 mb-1">📍 <strong>Location:</strong> <%= @event.location %></p>
+    <p class="text-gray-600 mb-1">🏷️ <strong>Sport:</strong> <%= @event.sport_type %> <%= sport_emoji(@event.sport_type) %></p>
+
+    <div class="mb-8">
+  <p class="text-gray-600 mb-2">📝 <strong>Event Description:</strong></p>
+  <div class="prose prose-sm sm:prose lg:prose-lg max-w-none text-gray-700 bg-white p-4 rounded border border-gray-200 shadow-sm">
+    <%= @event.description %>
+  </div>
+</div>
+
+  <% end %>
+
+  <% if authenticated? && Current.user == @event.user %>
+    <div class="flex gap-4 mb-6">
+      <%= link_to "Edit", edit_event_path(@event), class: "px-4 py-2 bg-[#bfceff] text-white rounded hover:bg-[#6b81c7] text-sm" %>
+      <%= button_to "Delete", @event, method: :delete, data: { turbo_confirm: "Are you sure?" }, class: "px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 text-sm" %>
+    </div>
+  <% end %>
+
+  <div class="mb-6">
+    <h3 class="text-lg font-semibold mb-2">🎟️ Who's attending:</h3>
+    <ul class="list-disc pl-6 text-gray-800">
+      <% @event.rsvps.includes(:user).each do |rsvp| %>
+        <li><%= rsvp.user.username %></li>
+      <% end %>
+    </ul>
+  </div>
+
+  <% if Current.user && Current.user != @event.user %>
+    <% if @event.rsvps.exists?(user: Current.user) %>
+      <div class="mb-4 text-green-700 font-semibold">✅ You’re attending this event!</div>
+      <%= render "unrsvp", event: @event %>
+    <% else %>
+      <%= render "rsvp", event: @event %>
+    <% end %>
+  <% elsif !Current.user %>
+    <p class="text-sm text-blue-600"><%= link_to "Log in to join the event", new_session_path, class: "hover:underline" %></p>
+  <% end %>
+
+  <div class="mt-10">
+    <h2 class="text-xl font-semibold mb-4">💬 Comments</h2>
+
+    <% @event.comments.each do |comment| %>
+      <div class="mb-4 border border-gray-200 rounded p-3 bg-white shadow-sm">
+        <p class="text-sm text-gray-600 mb-1"><strong><%= comment.user.username %></strong> said:</p>
+        <p class="text-gray-800"><%= comment.content %></p>
+      </div>
+    <% end %>
+
+    <% if Current.user %>
+      <%= form_with(model: [@event, Comment.new], local: true, class: "space-y-4") do |form| %>
+        <div>
+          <%= form.label :content, "Add a comment", class: "block text-sm font-medium text-gray-700" %>
+          <%= form.text_area :content, class: "w-full mt-1 rounded border border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500" %>
+        </div>
+        <div>
+          <%= form.submit "Post Comment", class: "px-4 py-2 bg-[#bfceff] text-white rounded hover:bg-[#6b81c7] text-sm" %>
+        </div>
+      <% end %>
+    <% else %>
+      <p class="text-sm text-blue-600"><%= link_to "Log in to comment", new_session_path, class: "hover:underline" %></p>
+    <% end %>
+  </div>
+</div>

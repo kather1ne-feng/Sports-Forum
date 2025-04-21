@@ -1,0 +1,12 @@
+Hi <%= @user.username %>,
+
+The event "<%= @event.name %>" has been updated.
+
+When: <%= @event.event_time.strftime("%A, %B %e at %l:%M %p") %>
+Where: <%= @event.location %>
+Sport: <%= @event.sport_type %>
+
+View the event: <%= event_url(@event) %>
+
+Thanks,  
+Your Events App

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= content_for(:title) || "Pick-up Sports Forum" %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= yield :head %>
+
+    <link rel="icon" href="/icon.png" type="image/png">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon.png">
+
+<%= javascript_importmap_tags %>
+    <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "actiontext", media: "all", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+<%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+
+<script src="https://cdn.jsdelivr.net/npm/@hotwired/turbo@7.3.0/dist/turbo.min.js"></script>
+    <script src="https://unpkg.com/trix@2.1.1/dist/trix.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@rails/actiontext@8.0.2/app/assets/javascripts/actiontext.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <%= javascript_importmap_tags %>
+  </head>
+
+
+
+  <body class="bg-gray-50 text-gray-900 min-h-screen  flex-col font-sans">
+
+    <nav>
+      <div class="flex items-center justify-between">
+          <%= link_to "Pick-up Sports Forum", root_path, class: "text-lg font-semibold text-blue-600 hover:underline" %>
+        </div>
+      <div class="max-w-5xl mx-auto px-4 py-3 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+        
+
+        <div class="flex items-center gap-3 flex-wrap">
+          <% if authenticated? %>
+            <span class="text-sm text-gray-700">👋 Welcome, <%= Current.user.username %>!</span>
+          <% end %>
+
+          <% unless authenticated? %>
+            <%= link_to "Login", new_session_path,
+              class: "px-4 py-2 text-sm rounded-xl border border-gray-300 bg-white hover:bg-gray-100 text-black" %>
+          <% end %>
+
+          <% if authenticated? %>
+            <%= button_to "Log out", session_path, method: :delete,
+              class: "px-4 py-2 text-sm rounded-xl border border-gray-300 bg-white hover:bg-gray-100 text-black" %>
+          <% end %>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="max-w-3xl mx-auto px-4 mt-4">
+      <% if flash[:notice] %>
+        <div class="bg-green-100 text-green-800 p-3 rounded mb-4 border border-green-300">
+          <%= flash[:notice] %>
+        </div>
+      <% end %>
+      <% if flash[:alert] %>
+        <div class="bg-red-100 text-red-800 p-3 rounded mb-4 border border-red-300">
+          <%= flash[:alert] %>
+        </div>
+      <% end %>
+    </div>
+
+    <main class="flex-grow max-w-5xl mx-auto w-full px-4 py-6">
+      <%= yield %>
+    </main>
+
+  </body>
+</html>

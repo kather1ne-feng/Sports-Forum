@@ -1,0 +1,36 @@
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-6 gap-4">
+  <h1 class="text-3xl font-bold text-gray-900">🏟️ Events Home Page!</h1>
+
+  <% if authenticated? %>
+    <%= link_to "🎨 New Event", new_event_path, class: "inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-[#bfceff] hover:bg-[#6b81c7] rounded-xl shadow-sm transition" %>
+  <% end %>
+</div>
+
+
+<br><br>
+
+<h3 class="text-lg font-semibold mb-2">Filter by Sport:</h3>
+
+<%= form_with url: events_path, method: :get, data: { turbo_frame: "events_list" }, class: "mb-6" do %>
+  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 mb-4">
+    <% Event::SPORT_TYPES.each do |sport| %>
+      <label class="inline-flex items-center space-x-2 bg-gray-100 hover:bg-gray-200 px-3 py-2 rounded cursor-pointer">
+        <%= check_box_tag "sport_types[]", sport, params[:sport_types]&.include?(sport), class: "accent-blue-600" %>
+        <span>
+          <%= sport_emoji(sport) %> <%= sport %>
+        </span>
+      </label>
+    <% end %>
+  </div>
+
+  <div class="flex gap-3">
+    <%= button_tag "Filter", type: "submit", class: "px-4 py-2 bg-[#bfceff] text-white rounded hover:bg-[#6b81c7] text-sm font-semibold" %>
+    <%= link_to "Reset", events_path, class: "px-4 py-2 bg-gray-200 text-gray-800 rounded hover:bg-gray-300 text-sm font-semibold" %>
+  </div>
+<% end %>
+
+
+<%# add turbo %>
+<%= turbo_frame_tag "events_list" do %>
+  <%= render partial: "events_list", locals: { events: @events } %>
+<% end %>

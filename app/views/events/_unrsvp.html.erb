@@ -1,0 +1,5 @@
+<%= form_with url: event_rsvp_path(@event, @event.rsvps.find_by(user: Current.user)), method: :delete, class: "mt-4" do |form| %>
+  <%= form.submit "🚪 Leave Event", 
+    data: { turbo_confirm: "Are you sure?" }, 
+    class: "px-4 py-2 bg-red-600 text-white text-sm font-semibold rounded hover:bg-red-700 transition" %>
+<% end %>

@@ -1,0 +1,558 @@
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2025-04-21 10:58:34 -0500
+Started GET "/" for 127.0.0.1 at 2025-04-21 10:58:34 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Forum'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (13.3ms)[0m  [1m[34mSELECT "events".* FROM "events" /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/views/events/_events_list.html.erb:2
+  Rendered events/_events_list.html.erb (Duration: 45.4ms | GC: 2.3ms)
+  Rendered events/index.html.erb within layouts/application (Duration: 51.2ms | GC: 2.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 65.3ms | GC: 10.3ms)
+Completed 200 OK in 251ms (Views: 41.7ms | ActiveRecord: 25.5ms (1 query, 0 cached) | GC: 19.5ms)
+
+
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 10:58:34 -0500
+Started GET "/events?sport_types%5B%5D=Volleyball&button=" for 127.0.0.1 at 2025-04-21 10:58:37 -0500
+Processing by EventsController#index as HTML
+  Parameters: {"sport_types" => ["Volleyball"], "button" => ""}
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."sport_type" = 'Volleyball' /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/views/events/_events_list.html.erb:2
+  Rendered events/_events_list.html.erb (Duration: 8.7ms | GC: 2.8ms)
+  Rendered events/index.html.erb within layouts/application (Duration: 13.3ms | GC: 4.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | GC: 6.3ms)
+Completed 200 OK in 60ms (Views: 25.0ms | ActiveRecord: 1.3ms (1 query, 0 cached) | GC: 9.5ms)
+
+
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 10:58:37 -0500
+Started GET "/events?sport_types%5B%5D=Volleyball&button=" for 127.0.0.1 at 2025-04-21 10:59:26 -0500
+Processing by EventsController#index as HTML
+  Parameters: {"sport_types" => ["Volleyball"], "button" => ""}
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."sport_type" = 'Volleyball' /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/views/events/_events_list.html.erb:2
+  Rendered events/_events_list.html.erb (Duration: 1.1ms | GC: 0.0ms)
+  Rendered events/index.html.erb within layouts/application (Duration: 4.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | GC: 0.0ms)
+Completed 200 OK in 55ms (Views: 8.1ms | ActiveRecord: 4.2ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 10:59:26 -0500
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2025-04-21 10:59:40 -0500
+Started GET "/" for 127.0.0.1 at 2025-04-21 10:59:40 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Forum'*/[0m
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+Processing by EventsController#index as HTML
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 10:59:40 -0500
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (54.7ms)[0m  [1m[34mSELECT "events".* FROM "events" /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/views/events/_events_list.html.erb:2
+  Rendered events/_events_list.html.erb (Duration: 86.6ms | GC: 0.0ms)
+  Rendered events/index.html.erb within layouts/application (Duration: 102.7ms | GC: 10.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 105.5ms | GC: 10.3ms)
+Completed 200 OK in 234ms (Views: 40.8ms | ActiveRecord: 66.2ms (1 query, 0 cached) | GC: 10.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-04-21 10:59:46 -0500
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.4ms)[0m  [1m[34mSELECT "events".* FROM "events" /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/views/events/_events_list.html.erb:2
+  Rendered events/_events_list.html.erb (Duration: 8.3ms | GC: 0.0ms)
+  Rendered events/index.html.erb within layouts/application (Duration: 11.5ms | GC: 0.6ms)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | GC: 0.6ms)
+Completed 200 OK in 47ms (Views: 14.2ms | ActiveRecord: 1.4ms (1 query, 0 cached) | GC: 0.6ms)
+
+
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2025-04-21 11:02:41 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Forum'*/[0m
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (12.6ms)[0m  [1m[34mSELECT "events".* FROM "events" /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/views/events/_events_list.html.erb:2
+  Rendered events/_events_list.html.erb (Duration: 41.8ms | GC: 0.0ms)
+  Rendered events/index.html.erb within layouts/application (Duration: 46.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 56.3ms | GC: 0.0ms)
+Completed 200 OK in 115ms (Views: 34.8ms | ActiveRecord: 24.4ms (1 query, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 11:02:41 -0500
+Started GET "/events?sport_types%5B%5D=Baseball&button=" for 127.0.0.1 at 2025-04-21 11:02:44 -0500
+Processing by EventsController#index as HTML
+  Parameters: {"sport_types" => ["Baseball"], "button" => ""}
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (3.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."sport_type" = 'Baseball' /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/views/events/_events_list.html.erb:2
+  Rendered events/_events_list.html.erb (Duration: 8.0ms | GC: 0.0ms)
+  Rendered events/index.html.erb within layouts/application (Duration: 10.9ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | GC: 0.0ms)
+Completed 200 OK in 52ms (Views: 12.4ms | ActiveRecord: 2.9ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 11:02:45 -0500
+Started GET "/events?sport_types%5B%5D=Baseball&button=" for 127.0.0.1 at 2025-04-21 11:02:46 -0500
+Processing by EventsController#index as HTML
+  Parameters: {"sport_types" => ["Baseball"], "button" => ""}
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (2.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."sport_type" = 'Baseball' /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/views/events/_events_list.html.erb:2
+  Rendered events/_events_list.html.erb (Duration: 6.2ms | GC: 0.0ms)
+  Rendered events/index.html.erb within layouts/application (Duration: 10.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | GC: 0.0ms)
+Completed 200 OK in 47ms (Views: 11.2ms | ActiveRecord: 2.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 11:02:46 -0500
+Started GET "/events?sport_types%5B%5D=Baseball&sport_types%5B%5D=Other&button=" for 127.0.0.1 at 2025-04-21 11:02:47 -0500
+Processing by EventsController#index as HTML
+  Parameters: {"sport_types" => ["Baseball", "Other"], "button" => ""}
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."sport_type" IN ('Baseball', 'Other') /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/views/events/_events_list.html.erb:2
+  Rendered events/_events_list.html.erb (Duration: 8.2ms | GC: 0.0ms)
+  Rendered events/index.html.erb within layouts/application (Duration: 10.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | GC: 0.0ms)
+Completed 200 OK in 58ms (Views: 15.6ms | ActiveRecord: 1.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 11:02:47 -0500
+Started GET "/events?sport_types%5B%5D=Baseball&sport_types%5B%5D=Hockey&sport_types%5B%5D=Other&button=" for 127.0.0.1 at 2025-04-21 11:02:48 -0500
+Processing by EventsController#index as HTML
+  Parameters: {"sport_types" => ["Baseball", "Hockey", "Other"], "button" => ""}
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.3ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."sport_type" IN ('Baseball', 'Hockey', 'Other') /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/views/events/_events_list.html.erb:2
+  Rendered events/_events_list.html.erb (Duration: 7.4ms | GC: 0.0ms)
+  Rendered events/index.html.erb within layouts/application (Duration: 9.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | GC: 0.0ms)
+Completed 200 OK in 49ms (Views: 9.6ms | ActiveRecord: 1.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 11:02:48 -0500
+Started GET "/events?sport_types%5B%5D=Baseball&sport_types%5B%5D=Hockey&sport_types%5B%5D=Golf&sport_types%5B%5D=Other&button=" for 127.0.0.1 at 2025-04-21 11:02:49 -0500
+Processing by EventsController#index as HTML
+  Parameters: {"sport_types" => ["Baseball", "Hockey", "Golf", "Other"], "button" => ""}
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (17.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."sport_type" IN ('Baseball', 'Hockey', 'Golf', 'Other') /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/views/events/_events_list.html.erb:2
+  Rendered events/_events_list.html.erb (Duration: 22.8ms | GC: 0.0ms)
+  Rendered events/index.html.erb within layouts/application (Duration: 33.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 39.5ms | GC: 0.0ms)
+Completed 200 OK in 68ms (Views: 22.9ms | ActiveRecord: 17.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 11:02:49 -0500
+Started GET "/events" for 127.0.0.1 at 2025-04-21 11:02:50 -0500
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (93.7ms)[0m  [1m[34mSELECT "events".* FROM "events" /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/views/events/_events_list.html.erb:2
+  Rendered events/_events_list.html.erb (Duration: 101.5ms | GC: 0.0ms)
+  Rendered events/index.html.erb within layouts/application (Duration: 102.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 111.6ms | GC: 0.0ms)
+Completed 200 OK in 141ms (Views: 20.3ms | ActiveRecord: 92.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 11:02:50 -0500
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2025-04-21 11:07:31 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Forum'*/[0m
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (11.9ms)[0m  [1m[34mSELECT "events".* FROM "events" /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/views/events/_events_list.html.erb:2
+  Rendered events/_events_list.html.erb (Duration: 40.3ms | GC: 0.0ms)
+  Rendered events/index.html.erb within layouts/application (Duration: 45.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 52.4ms | GC: 0.0ms)
+Completed 500 Internal Server Error in 111ms (ActiveRecord: 23.0ms (1 query, 0 cached) | GC: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method 'javascript_importmap_tags' for an instance of #<Class:0x000000011eed5200>)
+Caused by: NameError (undefined local variable or method 'javascript_importmap_tags' for an instance of #<Class:0x000000011eed5200>)
+
+Information for: ActionView::Template::Error (undefined local variable or method 'javascript_importmap_tags' for an instance of #<Class:0x000000011eed5200>):
+    14:     <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    15:     <link rel="apple-touch-icon" href="/icon.png">
+    16: 
+    17: <%= javascript_importmap_tags %>
+    18:     <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
+    19:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    20:     <%= stylesheet_link_tag "actiontext", media: "all", "data-turbo-track": "reload" %>
+  
+app/views/layouts/application.html.erb:17
+
+Information for cause: NameError (undefined local variable or method 'javascript_importmap_tags' for an instance of #<Class:0x000000011eed5200>):
+  
+app/views/layouts/application.html.erb:17
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 11:07:31 -0500
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mGMAIL_USERNAME[0m and [36mGMAIL_APP_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mGMAIL_USERNAME[0m and [36mGMAIL_APP_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[36mActiveRecord::SchemaMigration Load (3.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Forum'*/[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2025-04-21 11:09:22 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Forum'*/[0m
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (20.5ms)[0m  [1m[34mSELECT "events".* FROM "events" /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/views/events/_events_list.html.erb:2
+  Rendered events/_events_list.html.erb (Duration: 61.4ms | GC: 0.3ms)
+  Rendered events/index.html.erb within layouts/application (Duration: 66.1ms | GC: 0.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 76.2ms | GC: 0.6ms)
+Completed 200 OK in 143ms (Views: 33.2ms | ActiveRecord: 45.8ms (1 query, 0 cached) | GC: 7.2ms)
+
+
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 11:09:22 -0500
+Started GET "/events?sport_types%5B%5D=Hockey&button=" for 127.0.0.1 at 2025-04-21 11:09:48 -0500
+Processing by EventsController#index as HTML
+  Parameters: {"sport_types" => ["Hockey"], "button" => ""}
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.6ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."sport_type" = 'Hockey' /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/views/events/_events_list.html.erb:2
+  Rendered events/_events_list.html.erb (Duration: 3.4ms | GC: 0.0ms)
+  Rendered events/index.html.erb within layouts/application (Duration: 5.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | GC: 0.0ms)
+Completed 200 OK in 57ms (Views: 6.2ms | ActiveRecord: 1.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 11:09:48 -0500
+Started GET "/events?sport_types%5B%5D=Hockey&sport_types%5B%5D=Pickleball&button=" for 127.0.0.1 at 2025-04-21 11:09:49 -0500
+Processing by EventsController#index as HTML
+  Parameters: {"sport_types" => ["Hockey", "Pickleball"], "button" => ""}
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."sport_type" IN ('Hockey', 'Pickleball') /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/views/events/_events_list.html.erb:2
+  Rendered events/_events_list.html.erb (Duration: 4.2ms | GC: 0.0ms)
+  Rendered events/index.html.erb within layouts/application (Duration: 7.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | GC: 0.0ms)
+Completed 200 OK in 54ms (Views: 10.5ms | ActiveRecord: 1.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 11:09:49 -0500
+Started GET "/events?sport_types%5B%5D=Hockey&sport_types%5B%5D=Volleyball&sport_types%5B%5D=Pickleball&button=" for 127.0.0.1 at 2025-04-21 11:09:52 -0500
+Processing by EventsController#index as HTML
+  Parameters: {"sport_types" => ["Hockey", "Volleyball", "Pickleball"], "button" => ""}
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."sport_type" IN ('Hockey', 'Volleyball', 'Pickleball') /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/views/events/_events_list.html.erb:2
+  Rendered events/_events_list.html.erb (Duration: 3.5ms | GC: 0.0ms)
+  Rendered events/index.html.erb within layouts/application (Duration: 5.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | GC: 0.0ms)
+Completed 200 OK in 55ms (Views: 10.9ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 11:09:52 -0500
+Started GET "/events" for 127.0.0.1 at 2025-04-21 11:09:52 -0500
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/views/events/_events_list.html.erb:2
+  Rendered events/_events_list.html.erb (Duration: 7.8ms | GC: 0.0ms)
+  Rendered events/index.html.erb within layouts/application (Duration: 8.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | GC: 0.0ms)
+Completed 200 OK in 53ms (Views: 12.4ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 11:09:52 -0500
+Started GET "/events?sport_types%5B%5D=Tennis&button=" for 127.0.0.1 at 2025-04-21 11:09:54 -0500
+Processing by EventsController#index as HTML
+  Parameters: {"sport_types" => ["Tennis"], "button" => ""}
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."sport_type" = 'Tennis' /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/views/events/_events_list.html.erb:2
+  Rendered events/_events_list.html.erb (Duration: 8.0ms | GC: 0.0ms)
+  Rendered events/index.html.erb within layouts/application (Duration: 13.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | GC: 0.0ms)
+Completed 200 OK in 57ms (Views: 18.1ms | ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 11:09:54 -0500
+[dotenv] Set [36mGMAIL_USERNAME[0m and [36mGMAIL_APP_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mGMAIL_USERNAME[0m and [36mGMAIL_APP_PASSWORD[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2025-04-21 11:12:02 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Forum'*/[0m
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (15.6ms)[0m  [1m[34mSELECT "events".* FROM "events" /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/views/events/_events_list.html.erb:2
+  Rendered events/_events_list.html.erb (Duration: 50.2ms | GC: 0.3ms)
+  Rendered events/index.html.erb within layouts/application (Duration: 55.3ms | GC: 0.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 68.7ms | GC: 0.6ms)
+Completed 200 OK in 136ms (Views: 37.6ms | ActiveRecord: 34.1ms (1 query, 0 cached) | GC: 6.8ms)
+
+
+Started GET "/assets/@hotwired--turbo-rails-99397bf3.js" for 127.0.0.1 at 2025-04-21 11:12:02 -0500
+Started GET "/assets/trix-4b540cb5.js" for 127.0.0.1 at 2025-04-21 11:12:02 -0500
+Started GET "/assets/actiontext.esm-f1c04d34.js" for 127.0.0.1 at 2025-04-21 11:12:02 -0500
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 11:12:02 -0500
+Started GET "/events?sport_types%5B%5D=Hockey&button=" for 127.0.0.1 at 2025-04-21 11:12:05 -0500
+Processing by EventsController#index as HTML
+  Parameters: {"sport_types" => ["Hockey"], "button" => ""}
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."sport_type" = 'Hockey' /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/views/events/_events_list.html.erb:2
+  Rendered events/_events_list.html.erb (Duration: 4.5ms | GC: 0.0ms)
+  Rendered events/index.html.erb within layouts/application (Duration: 7.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | GC: 0.0ms)
+Completed 200 OK in 50ms (Views: 8.9ms | ActiveRecord: 1.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 11:12:05 -0500
+Started GET "/events?sport_types%5B%5D=Hockey&sport_types%5B%5D=Pickleball&button=" for 127.0.0.1 at 2025-04-21 11:12:06 -0500
+Processing by EventsController#index as HTML
+  Parameters: {"sport_types" => ["Hockey", "Pickleball"], "button" => ""}
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."sport_type" IN ('Hockey', 'Pickleball') /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/views/events/_events_list.html.erb:2
+  Rendered events/_events_list.html.erb (Duration: 2.9ms | GC: 0.0ms)
+  Rendered events/index.html.erb within layouts/application (Duration: 6.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | GC: 0.0ms)
+Completed 200 OK in 49ms (Views: 7.9ms | ActiveRecord: 1.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 11:12:07 -0500
+Started GET "/events?sport_types%5B%5D=Hockey&sport_types%5B%5D=Pickleball&sport_types%5B%5D=Other&button=" for 127.0.0.1 at 2025-04-21 11:12:08 -0500
+Processing by EventsController#index as HTML
+  Parameters: {"sport_types" => ["Hockey", "Pickleball", "Other"], "button" => ""}
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."sport_type" IN ('Hockey', 'Pickleball', 'Other') /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/views/events/_events_list.html.erb:2
+  Rendered events/_events_list.html.erb (Duration: 2.5ms | GC: 0.0ms)
+  Rendered events/index.html.erb within layouts/application (Duration: 4.0ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | GC: 0.0ms)
+Completed 200 OK in 49ms (Views: 7.8ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 11:12:08 -0500
+Started GET "/events?sport_types%5B%5D=Baseball&sport_types%5B%5D=Hockey&sport_types%5B%5D=Pickleball&sport_types%5B%5D=Other&button=" for 127.0.0.1 at 2025-04-21 11:12:09 -0500
+Processing by EventsController#index as HTML
+  Parameters: {"sport_types" => ["Baseball", "Hockey", "Pickleball", "Other"], "button" => ""}
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."sport_type" IN ('Baseball', 'Hockey', 'Pickleball', 'Other') /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/views/events/_events_list.html.erb:2
+  Rendered events/_events_list.html.erb (Duration: 8.3ms | GC: 0.0ms)
+  Rendered events/index.html.erb within layouts/application (Duration: 9.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | GC: 0.0ms)
+Completed 200 OK in 53ms (Views: 10.6ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 11:12:09 -0500
+Started GET "/events?sport_types%5B%5D=Basketball&sport_types%5B%5D=Baseball&sport_types%5B%5D=Hockey&sport_types%5B%5D=Pickleball&sport_types%5B%5D=Other&button=" for 127.0.0.1 at 2025-04-21 11:12:10 -0500
+Processing by EventsController#index as HTML
+  Parameters: {"sport_types" => ["Basketball", "Baseball", "Hockey", "Pickleball", "Other"], "button" => ""}
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."sport_type" IN ('Basketball', 'Baseball', 'Hockey', 'Pickleball', 'Other') /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/views/events/_events_list.html.erb:2
+  Rendered events/_events_list.html.erb (Duration: 13.3ms | GC: 0.0ms)
+  Rendered events/index.html.erb within layouts/application (Duration: 15.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | GC: 0.0ms)
+Completed 200 OK in 58ms (Views: 16.8ms | ActiveRecord: 1.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 11:12:10 -0500
+Started GET "/events" for 127.0.0.1 at 2025-04-21 11:12:11 -0500
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.2ms)[0m  [1m[34mSELECT "events".* FROM "events" /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/views/events/_events_list.html.erb:2
+  Rendered events/_events_list.html.erb (Duration: 4.0ms | GC: 0.0ms)
+  Rendered events/index.html.erb within layouts/application (Duration: 7.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | GC: 0.0ms)
+Completed 200 OK in 52ms (Views: 11.6ms | ActiveRecord: 0.5ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 11:12:11 -0500
+Started GET "/events?sport_types%5B%5D=Football&button=" for 127.0.0.1 at 2025-04-21 11:12:12 -0500
+Processing by EventsController#index as HTML
+  Parameters: {"sport_types" => ["Football"], "button" => ""}
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.9ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."sport_type" = 'Football' /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/views/events/_events_list.html.erb:2
+  Rendered events/_events_list.html.erb (Duration: 3.8ms | GC: 0.0ms)
+  Rendered events/index.html.erb within layouts/application (Duration: 5.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | GC: 0.0ms)
+Completed 200 OK in 54ms (Views: 12.8ms | ActiveRecord: 0.9ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 11:12:12 -0500
+Started GET "/events?sport_types%5B%5D=Football&sport_types%5B%5D=Pickleball&button=" for 127.0.0.1 at 2025-04-21 11:12:13 -0500
+Processing by EventsController#index as HTML
+  Parameters: {"sport_types" => ["Football", "Pickleball"], "button" => ""}
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."sport_type" IN ('Football', 'Pickleball') /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/views/events/_events_list.html.erb:2
+  Rendered events/_events_list.html.erb (Duration: 6.2ms | GC: 0.0ms)
+  Rendered events/index.html.erb within layouts/application (Duration: 7.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | GC: 0.0ms)
+Completed 200 OK in 48ms (Views: 7.8ms | ActiveRecord: 1.0ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 11:12:13 -0500
+Started GET "/events" for 127.0.0.1 at 2025-04-21 11:12:33 -0500
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mEvent Load (0.8ms)[0m  [1m[34mSELECT "events".* FROM "events" /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/views/events/_events_list.html.erb:2
+  Rendered events/_events_list.html.erb (Duration: 5.8ms | GC: 0.0ms)
+  Rendered events/index.html.erb within layouts/application (Duration: 6.5ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | GC: 0.0ms)
+Completed 200 OK in 57ms (Views: 13.3ms | ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 11:12:33 -0500
+Started GET "/session/new" for 127.0.0.1 at 2025-04-21 11:12:35 -0500
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 10.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | GC: 0.0ms)
+Completed 200 OK in 63ms (Views: 12.3ms | ActiveRecord: 3.7ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 11:12:35 -0500
+Started POST "/session" for 127.0.0.1 at 2025-04-21 11:12:37 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token" => "[FILTERED]", "email_address" => "[FILTERED]", "password" => "[FILTERED]", "commit" => "Log in"}
+[31mUnpermitted parameters: :authenticity_token, :commit. Context: { controller: SessionsController, action: create, request: #<ActionDispatch::Request:0x000000012fd126c8>, params: {"authenticity_token" => "[FILTERED]", "email_address" => "[FILTERED]", "password" => "[FILTERED]", "commit" => "Log in", "controller" => "sessions", "action" => "create"} }[0m
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email_address" = 'me@gmail.com' LIMIT 1 /*action='create',application='Forum',controller='sessions'*/[0m
+  ↳ app/controllers/sessions_controller.rb:10:in 'SessionsController#create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN /*action='create',application='Forum',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+  [1m[36mSession Create (3.9ms)[0m  [1m[32mINSERT INTO "sessions" ("user_id", "ip_address", "user_agent", "created_at", "updated_at") VALUES (1, '127.0.0.1', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3 Safari/605.1.15', '2025-04-21 16:12:38.185190', '2025-04-21 16:12:38.185190') RETURNING "id" /*action='create',application='Forum',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT /*action='create',application='Forum',controller='sessions'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:42:in 'Authentication#start_new_session_for'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 318ms (ActiveRecord: 11.9ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-04-21 11:12:38 -0500
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mSession Load (0.7ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions" WHERE "sessions"."id" = 31 LIMIT 1 /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  [1m[36mEvent Load (0.2ms)[0m  [1m[34mSELECT "events".* FROM "events" /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/views/events/_events_list.html.erb:2
+  Rendered events/_events_list.html.erb (Duration: 2.2ms | GC: 0.0ms)
+  Rendered events/index.html.erb within layouts/application (Duration: 9.0ms | GC: 0.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/models/current.rb:3:in 'Current#user'
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | GC: 0.0ms)
+Completed 200 OK in 32ms (Views: 12.1ms | ActiveRecord: 1.2ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 11:12:38 -0500
+Started GET "/events/new" for 127.0.0.1 at 2025-04-21 11:12:39 -0500
+Processing by EventsController#new as HTML
+  [1m[36mSession Load (1.1ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions" WHERE "sessions"."id" = 31 LIMIT 1 /*action='new',application='Forum',controller='events'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  Rendering layout layouts/application.html.erb
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (Duration: 66.4ms | GC: 10.9ms)
+  Rendered events/new.html.erb within layouts/application (Duration: 68.8ms | GC: 10.9ms)
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='new',application='Forum',controller='events'*/[0m
+  ↳ app/models/current.rb:3:in 'Current#user'
+  Rendered layout layouts/application.html.erb (Duration: 75.0ms | GC: 10.9ms)
+Completed 200 OK in 124ms (Views: 69.9ms | ActiveRecord: 6.6ms (2 queries, 0 cached) | GC: 10.9ms)
+
+
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 11:12:39 -0500
+Started GET "/events/new" for 127.0.0.1 at 2025-04-21 11:12:59 -0500
+Processing by EventsController#new as HTML
+  [1m[36mSession Load (0.2ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions" WHERE "sessions"."id" = 31 LIMIT 1 /*action='new',application='Forum',controller='events'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  Rendering layout layouts/application.html.erb
+  Rendering events/new.html.erb within layouts/application
+  Rendered events/_form.html.erb (Duration: 15.7ms | GC: 0.2ms)
+  Rendered events/new.html.erb within layouts/application (Duration: 19.5ms | GC: 0.2ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='new',application='Forum',controller='events'*/[0m
+  ↳ app/models/current.rb:3:in 'Current#user'
+  Rendered layout layouts/application.html.erb (Duration: 41.1ms | GC: 0.4ms)
+Completed 200 OK in 105ms (Views: 39.6ms | ActiveRecord: 9.8ms (2 queries, 0 cached) | GC: 1.1ms)
+
+
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 11:12:59 -0500
+Started GET "/events" for 127.0.0.1 at 2025-04-21 11:13:01 -0500
+Processing by EventsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mSession Load (0.9ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions" WHERE "sessions"."id" = 31 LIMIT 1 /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/views/events/_events_list.html.erb:2
+  Rendered events/_events_list.html.erb (Duration: 7.2ms | GC: 0.0ms)
+  Rendered events/index.html.erb within layouts/application (Duration: 14.3ms | GC: 0.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/models/current.rb:3:in 'Current#user'
+  Rendered layout layouts/application.html.erb (Duration: 22.2ms | GC: 0.0ms)
+Completed 200 OK in 64ms (Views: 22.8ms | ActiveRecord: 1.8ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 11:13:01 -0500
+Started GET "/events?sport_types%5B%5D=Volleyball&button=" for 127.0.0.1 at 2025-04-21 11:13:03 -0500
+Processing by EventsController#index as HTML
+  Parameters: {"sport_types" => ["Volleyball"], "button" => ""}
+  Rendering layout layouts/application.html.erb
+  Rendering events/index.html.erb within layouts/application
+  [1m[36mSession Load (0.8ms)[0m  [1m[34mSELECT "sessions".* FROM "sessions" WHERE "sessions"."id" = 31 LIMIT 1 /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/controllers/concerns/authentication.rb:29:in 'Authentication#find_session_by_cookie'
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."sport_type" = 'Volleyball' /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/views/events/_events_list.html.erb:2
+  Rendered events/_events_list.html.erb (Duration: 1.5ms | GC: 0.0ms)
+  Rendered events/index.html.erb within layouts/application (Duration: 6.3ms | GC: 0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1 /*action='index',application='Forum',controller='events'*/[0m
+  ↳ app/models/current.rb:3:in 'Current#user'
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | GC: 0.0ms)
+Completed 200 OK in 50ms (Views: 9.4ms | ActiveRecord: 1.6ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/actiontext" for 127.0.0.1 at 2025-04-21 11:13:03 -0500
