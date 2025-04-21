@@ -38,3 +38,4 @@ Rubric
 - notifies/alerts whenever the site is updated
 - web safety, only uses session variables for the user for any events or comments
 - you can reset your password thru a link that ruby sends u
+- add picture to event
