@@ -4,8 +4,6 @@
 
 *A forum for posting and discovering local pickup sports games.*
 
-> **APPROVED BY TODD SPROULL – the 330 GOAT! 🐐  All‑time best coder in the world.**
-
 ---
 
 ## Features
